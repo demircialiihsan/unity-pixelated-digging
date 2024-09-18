@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8517064819510558738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2880504164222358236}
+  - component: {fileID: 8744390644865202207}
+  - component: {fileID: 6861505048153413749}
+  - component: {fileID: 6939479765141868674}
+  m_Layer: 0
+  m_Name: VoxelGrid
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2880504164222358236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517064819510558738}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8744390644865202207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517064819510558738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27a0f709c868f7d46a16e97396bd6795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  voxelSize: 0.1
+  chunkResolution: {x: 50, y: 50}
+  gridResolution: {x: 2, y: 2}
+  extrusionHeight: 0.2
+  chunkPrefab: {fileID: 2435213609451691098, guid: cef87e5a131dfcc469d40b6c2215bd4d, type: 3}
+  digController: {fileID: 6861505048153413749}
+  digFXHandler: {fileID: 6939479765141868674}
+--- !u!114 &6861505048153413749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517064819510558738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e8e34c3ec23dd247ab702dbabae3ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stencilRadius: 4
+--- !u!114 &6939479765141868674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8517064819510558738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c44d0d4dc4e2fa948ba7c516575a7a9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  digFXPrefab: {fileID: 3587601155930839996, guid: 068be2a7781634842af9632d2cec4675, type: 3}
+  initialPoolSize: 250
+  maxPoolSize: 500
